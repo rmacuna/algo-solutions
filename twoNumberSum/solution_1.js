@@ -6,8 +6,7 @@ function twoNumberSum(array, targetSum) {
 		const elem = array[i];
 		for (j = 0; j <= array.length; j++) {
 			if ((elem + array[j]) === targetSum && i !== j) {
-				sumPair.push(...[elem, array[j]])
-				return sumPair;
+				return [elem, array[j]];
 			}
 		}
 	}	
